@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "830205785560",
+    "project_id": "contactread-160710"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830205785560:android:4cb42896d410694a",
+        "android_client_info": {
+          "package_name": "com.example.rms.readgooglecontacts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830205785560-7sqqfu10otnrprqovir0b88v9h8536qs.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "830205785560-4loso0jsfehmu6q7cgce6jp8n7rbtsbl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rms.readgooglecontacts",
+            "certificate_hash": "6c02a6f1847975e1833e96fbe9b783cee3300871"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhVYNeDbnbJPUT5Nxkvzv6Tmz8PfPyL28"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

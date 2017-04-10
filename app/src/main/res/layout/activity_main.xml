@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.rms.readgooglecontacts.MainActivity">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchCardView"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        android:layout_margin="5dp"
+
+        app:cardBackgroundColor="#FFBB55"
+        app:cardUseCompatPadding="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:id="@+id/textvw"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invite your friends and get upto Rs.2000" />
+            <TextView
+                android:layout_below="@+id/textvw"
+                android:textColor="#fff"
+                android:layout_margin="5dp"
+                android:id="@+id/tvw1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="♦   Your earnings are linked to the number of invites you share!"/>
+            <TextView
+                android:textColor="#fff"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/tvw1"
+                android:id="@+id/tvw2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="♦   More you invite, more you earn"/>
+            <TextView
+                android:textColor="#fff"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/tvw2"
+                android:id="@+id/tvw3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="♦   Use your earned promo code to claim it during checkout"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+<LinearLayout
+    android:id="@+id/sign_in_button"
+    android:layout_below="@+id/tvw4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+    android:id="@+id/gmail_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_bg_stroke3"
+    android:text="Invite Gmail Friends"
+    android:textColor="#fff"
+    android:textAllCaps="false"
+    />
+    <Button
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+    android:id="@+id/yahoo_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_bg_stroke3"
+    android:text="Invite Yahoo Friends"
+    android:textColor="#fff"
+    android:textAllCaps="false"
+    />
+
+</LinearLayout>
+    <Button
+        android:layout_below="@+id/sign_in_button"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/facebook_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg_stroke3"
+        android:text="Post To Facebook"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/tvw4"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/invite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:text="OR"/>
+    <TextView
+        android:layout_below="@+id/searchCardView"
+        android:id="@+id/tvw5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Type emails seperated by comma to send invite"/>
+    <EditText
+        android:layout_below="@+id/tvw5"
+        android:textStyle="normal"
+        android:layout_margin="5dp"
+        android:textColor="#000"
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="true"
+        android:minHeight="100dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:background="@drawable/border"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/invite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment"
+        android:background="@drawable/button_bg_stroke3"
+        android:text="Send Invite"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="110dp"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardView"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/facebook_button"
+        app:cardBackgroundColor="#FFBB55"
+        app:cardUseCompatPadding="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_margin="5dp"
+                android:textColor="#fff"
+                android:id="@+id/tvw6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Invites / Points: 0"/>
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:layout_below="@+id/tvw6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:textColor="#fff"
+                    android:id="@+id/tvw8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"/>
+                <TextView
+                    android:textColor="#fff"
+                    android:layout_toRightOf="@+id/tvw8"
+                    android:id="@+id/tvw9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" more friends required to generate promo code"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <!--<com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:visibility="visible"
+
+        android:layout_below="@+id/searchCardView"
+        tools:visibility="gone" />-->
+    <!--<com.google.android.gms.plus.PlusOneButton
+        xmlns:plus="http://schemas.android.com/apk/lib/com.google.android.gms.plus"
+        android:id="@+id/plus_one_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        plus:size="standard"
+        plus:annotation="inline" />-->
+</RelativeLayout>
+</ScrollView>
